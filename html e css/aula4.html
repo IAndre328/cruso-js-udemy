@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu HTML</title>
+    <!--style permite colocar estilo no seu html-->
+    <style>
+        /*Ponto " . " para selecionar Classes e Jogo da velha " # " para identificar id*/
+
+        /*seleciona a TAG h1*/
+        h1 {
+            background-color: red;
+        }
+        p {
+            background-color: blue;
+        }
+        #cabecalho-dois{
+            background-color: rebeccapurple;
+        }
+        .fundo-vermelho{
+            background-color: yellow;
+        }
+        /*ID é mais "forte" do que a classe*/
+        /*Todos com a classe bold estará com a cor rosa*/
+        .bold{
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!--Um id deve ser ÚNICA na página-->
+    <h1 id="cabecalho-um">Título</h1> <!--Tag e seu fechamento, o texto precisa ficar dentro da tag-->
+    <h1 id="cabecalho-dois" class="fundo-vermelho">Título aqui</h1>
+
+    <!--As classes podem se repetir ao longo do documento-->
+
+    <h1 class="fundo-vermelho borda-esquerda">Fundo vermelho</h1>
+
+    <h1 class="fundo-vermelho">Fundo vermelho</h1>
+    <p>Um texto <b class="bold">qualquer</b> </p>
+    <p>Um texto <b class="bold">qualquer</b> </p>
+    <p>Um texto <b class="bold">qualquer</b> </p>
+    <p>Um texto <b class="bold">qualquer</b> </p>
+</body>
+</html>

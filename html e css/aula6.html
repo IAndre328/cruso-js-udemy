@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 6</title>
+
+    <style>
+        h1{
+            background: red;
+        }
+        .logo{
+            width: 50px;
+            height: 45px;
+        }
+        .vermelho{
+            color: red;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="background: blue;">Cabeçalho</h1> <!--Só aplica a esse h1-->
+    <h1>Cabeçalho 2</h1>
+    <!--a tag B serve únicamente para deixar em negrito, enquanto a strong serve para o navegador interpretar como uma palavra mais "forte"-->
+    <p><b>Lorem</b> <strong>ipsum</strong> <i>dolor</i><!--Itálico--> <em>dolor</em><!--Ênfase-->, sit amet consectetur adipisicing elit. <small>Animi</small> maiores a, est magnam officiis eos sed iure rem doloremque mollitia earum cupiditate quibusdam natus culpa incidunt? Repellendus eos cumque illum.</p>
+
+    <a href="" target="_blank"><img class="logo" src="https://images.app.goo.gl/xYPH37b6cT5AYjji6.png" alt="Uma logo qualquer"></a>
+    <!--O link está na imagem-->
+    <!--target="_blank" é para abrir o link em outra guia-->
+
+
+    <!--O estilo de display normalmente é o block, onde geralmente costuma ir um embaixo do outro-->
+    <!--Quando algo ocupa apenas o seu espaço ele é inline-->
+
+    <!--"Deletei vermelho e inseri azul"-->
+    <p><del>vermelho</del> <ins>azul</ins></p>
+
+    <!--Estético-->
+    <p><s>vermelho</s> <u>azul</u></p>
+
+    <!--Elevado sup - subir -->
+    <p>2<sup>2</sup></p>
+
+    <!--sub - embaixo -->
+
+    <p>h<sub>2</sub>o</p>
+
+    <!--Quebra de linha-->
+    <p>Quebra <br>de linha</p>
+
+    <!--Citação-->
+    <p><q>Eu comi um pão</q></p>
+
+    <!--Daqui pra baixo, as tags não podem ser usadas dentro do p-->
+
+    <blockquote cite="https://br.freepik.com/vetores-gratis/vetor-de-gradiente-de-logotipo-colorido-de-passaro_28267842.htm#query=logo%20design&position=1&from_view=keyword&track=ais&uuid=1ee71025-2e5e-49e8-8e14-6492a808882b">
+        <p>Este é um bloco de citação</p>
+        <hr> <!--Linha horizontal-->
+        <p>Citação sobre tecnologia</p>
+        <code>console.log("teste")</code>
+    </blockquote>
+
+    <!--Quando a formatação do texto tem de ser fiel a do codigo você tem que usar a tag pre - texto pre formatado-->
+
+    <pre>
+        let soma = 0
+            soma += 2
+    </pre>
+
+    <!--span e div - containers genérico-->
+    <!--O span é inline - use somente visualmente-->
+
+    <p><span class="vermelho">Lorem</span> ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, velit?</p>
+
+    <!--O div é um bloco-->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <div class="vermelho">Eu sou um bloco</div> Eum in quidem est nobis libero harum accusantium laboriosam consectetur, doloribus quo.</p>
+    
+</body>
+</html>
