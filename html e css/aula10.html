@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        Uma caixa em html é renderizada de dentro pra fora, sendo:
+
+        1-Content
+        2-padding
+        3-border
+        4-margin
+
+        1- Se trata do conteúdo em si, o texto, o tamanho da caixa
+
+        2- se trata de um enchimento que você pode colocar na sua caixa
+
+        3- Se trata de uma borda que você pode colocar no seu conteúdo
+
+        4- Se trata de uma distância que você pode pode colocar entre um elemento e outro
+
+        Caso dois margins se colidem, a maior prevalece
+        */
+        /*reset geral*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .div-one,.div-two{
+            box-sizing: border-box; 
+            /*
+            as bordas e o enchimento irão ser usados no calculo de altura e largura
+
+            o padding e o border devem se encaixar no width e no height
+
+            ex: width:250px 
+            content+padding+border=250px
+            */
+        }
+
+        .div-one{
+            border:5px solid black;
+            
+            margin: 30px;
+
+            width: 200px;
+
+            padding: 15px;
+
+            background: rebeccapurple url(https://assets.nflxext.com/ffe/siteui/vlv3/5e16108c-fd30-46de-9bb8-0b4e1bbbc509/7784841b-4fc4-40bf-8a4a-82dfc995ea0d/BR-pt-20240205-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+            background-size: cover;
+            background-size: center center;
+            color: white;
+            
+        }
+        .div-two{
+            background: green;
+
+            border:5px solid black;
+            border-bottom-color: palegreen;
+            border-left-color: yellow;
+            border-right-color: blue;
+            border-top-color: red;
+            border-bottom-width: 10px;
+            border-bottom-style: dashed;
+
+            margin: 20px;
+            
+            width: 200px;
+
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div-one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, impedit eum distinctio</div>
+    <div class="div-two">2</div>
+</body>
+</html>

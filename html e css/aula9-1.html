@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix estrutura</title>
+    <style>
+        *{
+            /*Recomendado para grande parte dos sites que irá fazer, resetar valores padão do navegador*/
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            /*para colocar uma imagem use o url() no background, coloque um link ou caminho de arquivo*/
+
+            background: url(https://assets.nflxext.com/ffe/siteui/vlv3/5e16108c-fd30-46de-9bb8-0b4e1bbbc509/7784841b-4fc4-40bf-8a4a-82dfc995ea0d/BR-pt-20240205-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+            background-position: center;
+        }
+        #heading{
+            background: rgba(0, 0, 0, 0.3);
+        }
+        #heading div{
+            /*
+            margin: 0 define para nenhum, auto reconheçe como automático
+            display flex serve para criar colunas e linhas para organizar seus elementos
+            justify-content: serve para alinhar horizontalmente os elementos
+            */
+
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        #heading .h1{
+            /*
+            padding: topo direita baixo esquerda - horario
+            font-size: define o tamanho da fonte do elemento
+            text-transform: muda a escrita do texto
+            */
+            padding: 15px 0;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        #heading a {
+            /*
+            text-decoration: muda elementos como underline, normalmente do a
+            font-family: altera a fonte do elemento
+            */
+
+            color: red;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header id="heading">
+        <div>
+            <h1 class="h1"><a href="https://netflix.com">Netflix</a></h1>
+            <h2 class="h1"><a href="https://netflix.com">Netflix</a></h1>
+        </div>
+    </header>
+</body>
+</html>
