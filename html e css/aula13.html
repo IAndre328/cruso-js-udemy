@@ -34,20 +34,96 @@
                     <label for="dev">
                         Você é um dev?
                     </label>
-                    <input type="checkbox" id="dev" name="dev" placeholder="Seu nome" value="sim" checked> 
+                    <input type="checkbox" id="dev" name="dev" placeholder="Seu nome" value="sim" checked><br> 
                     <label for="dev2">
                         Você é um dev?
                     </label>
-                    <input type="checkbox" id="dev2" name="dev" placeholder="Seu nome" value="sim" checked>
+                    <input type="checkbox" id="dev2" name="dev" placeholder="Seu nome" value="sim" checked><br>
                     <label for="dev3">
                         Você é um dev?
                     </label>
                     <input type="checkbox" id="dev3" name="dev" placeholder="Seu nome" value="sim" checked>
                 </p>
                 <p>
+                    Gênero:
+                    <label for="feminino">Feminino
+                        <input type="radio" id="feminino" name="genero" value="feminino" checked><br>
+                    </label>
+
+                    <label for="masculino">Masculino
+                        <input type="radio" id="masculino" name="genero" value="masculino"> <br>
+                    </label>
+
+                    <label for="outro">Outro
+                        <input type="radio" id="outro" name="genero" value="outro"> 
+                    </label>
+                    
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Segunda parte da aula</legend>
+                    <p>
+                        <label>Data:
+                            <input type="date" id="date" name="date" value="20-04-2020" required> 
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>Data:
+                            <input type="datetime-local" id="datetime-local" name="datetime-local" value="2020-04-20T20:00" required>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>Data:
+                            <input type="time" id="time" name="time" value="20:00:01" required>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>Cor Preferida:
+                            <input type="color" id="cor" name="cor" value="#003d66" required>
+                        </label>
+                    </p>
+                    
+                    <p>
+                        <label>email:
+                            <input type="email" id="email" name="email" placeholder="ex:email@gmail.com">
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>arquivo:
+                            <input type="file" id="file" name="file" accept="image/*,.svg" multiple>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>Número:
+                            <input type="number" id="number" name="number" min="10" max="50" step="5">
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>Número:
+                            <input type="number" id="number" name="number" placeholder="Digite um número">
+                        </label>
+                    </p>
+    
+                <p>
                     <button type="reset">Resetar</button>
                     <button type="submit">Enviar</button>
                 </p>
+            </fieldset>
+            <fieldset>
+                <legend>Terceira parte da aula</legend>
+
+                    <p>
+                        <label>Senha:
+                            <input type="password" id="password" name="password" placeholder="Crie uma senha">
+                        </label>
+                    </p>
+                
             </fieldset>
         </section>
     </form>
