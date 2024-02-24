@@ -16,44 +16,71 @@
         table td,table th{
             border: 1px solid gray;
             padding: 5px;
+            text-align: left;
         }
         table caption {
             caption-side: top; /*Onde ficará localizada a descrição*/
             text-align: left; /*Alinhamento do texto*/
+            font-style: italic;
+            font-size: 14px;
+            margin-bottom: 5px 0;
+        }
+        tfoot td,table th{
+            background:#ddd;
+        }
+        tfoot td{
+            font-style: italic;
+        }
+        .responsive-table{
+            max-width: 100%; /*Tamanho máximo*/
+            overflow-x: auto; /*O que acontece quando o elemento passa do tamanho da tela HORIZONTALMENTE*/
         }
     </style>
 </head>
 <body>
     <p>Lorem ipsum dolor sit amet.</p>
+    <div class="responsive-table">
+        <!--A tag TABLE serve para criar uma tabela em html, ela    necessita de cabeçalho, corpo e rodapé semanticamente-->
+        <table>
+            <caption>Descrição da tabela</caption>
+            <thead> <!--Denomina o cabeçalho da tabela-->
+                <tr> <!--Denomina uma linha na tabela-->
+                    <th>Título 1</th> <!--Célula de cabeçalho-->
+                    <th>Título 2</th> <!--Célula de cabeçalho-->
+                    <th>Título 3</th> <!--Célula de cabeçalho-->
+                </tr> 
+            </thead>
 
-    <!--A tag TABLE serve para criar uma tabela em html, ela necessita de cabeçalho, corpo e rodapé semanticamente-->
-    <table>
-        <caption>Descrição da tabela</caption>
-        <thead> <!--Denomina o cabeçalho da tabela-->
-            <tr> <!--Denomina uma linha na tabela-->
-                <th>Título 1</th> <!--Célula de cabeçalho-->
-                <th>Título 2</th> <!--Célula de cabeçalho-->
-                <th>Título 3</th> <!--Célula de cabeçalho-->
-            </tr> 
-        </thead>
+            <tbody> <!--Denomina o corpo da tabela-->
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 4</td>
+                </tr>
+                <tr>
+                    <!--A propriedade colspan denomina a    quantidade de COLUNAS que uma célula ocupa,-->
+                    <!--COL - COLUNA-->
+                    <td colspan="2">LOCAL</td>
+                    <!-- A propriedade rowspan faz a mesma coisa    que o colspan, só que para linhas -->
+                    <!--ROW - LINHA-->
+                    <td rowspan="2">AQUI</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                </tr>
+            </tbody>
 
-        <tbody> <!--Denomina o corpo da tabela-->
-            <tr>
-                <td>Corpo 1</td>
-                <td>Corpo 2</td>
-                <td>Corpo 4</td>
-            </tr>
-            <tr>
-                <td>Corpo 1</td>
-                <td>Corpo 2</td>
-                <td>Corpo 4</td>
-            </tr>
-            <tr>
-                <td>Corpo 1</td>
-                <td>Corpo 2</td>
-                <td>Corpo 4</td>
-            </tr>
-        </tbody>
-    </table>
+            <tfoot> <!--Denomimna o rodapé da tabela-->
+                <tr>
+                    <td colspan="2" rowspan="2">Corpo 1</td>
+                    <td rowspan="">TOTAL:</td>
+                </tr>
+                <tr>
+                    <td>R$:555</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 </body>
 </html>

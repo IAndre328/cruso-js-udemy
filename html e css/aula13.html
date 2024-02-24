@@ -1,0 +1,55 @@
+<!--
+    Link importante:
+    https://www.w3schools.com/html/html_form_input_types.asp
+    
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs e formulários</title>
+    <style>
+        label{
+            cursor: pointer;
+        }
+    </style>    
+</head>
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <section>
+            <h1>Cabeçalho</h1>
+            <p>O formulário</p>
+
+            <fieldset> <!--Agurpa suas "seções do formulário. Ex: Cartão, produto, cliente"-->
+                <legend>Descrição</legend> <!--Dá uma legenda ao seu formulário-->
+                <p>Diga alguma coisa</p>
+                <p>
+                    <label>Nome:
+                        <input type="text" id="name" name="nome" placeholder="Seu nome" required> <!--O type do input importa muito, já que irá alterar de que tipo será seu input-->
+                    </label>
+                </p>
+                <p>
+                    <label for="dev">
+                        Você é um dev?
+                    </label>
+                    <input type="checkbox" id="dev" name="dev" placeholder="Seu nome" value="sim" checked> 
+                    <label for="dev2">
+                        Você é um dev?
+                    </label>
+                    <input type="checkbox" id="dev2" name="dev" placeholder="Seu nome" value="sim" checked>
+                    <label for="dev3">
+                        Você é um dev?
+                    </label>
+                    <input type="checkbox" id="dev3" name="dev" placeholder="Seu nome" value="sim" checked>
+                </p>
+                <p>
+                    <button type="reset">Resetar</button>
+                    <button type="submit">Enviar</button>
+                </p>
+            </fieldset>
+        </section>
+    </form>
+</body>
+</html>
