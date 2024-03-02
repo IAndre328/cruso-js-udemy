@@ -1,0 +1,45 @@
+/*parte 1*/
+
+*{ /*seleciona tudo*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{ /*afeta todos os p*/
+    color: red;
+} /*afeta todos os p dentro da section dentro de div dentro de body*/
+body div section p,
+body div section h1 {
+    color: yellow;
+}
+.color-aqua{
+    color: aqua;
+}
+
+.main-content h2{ /*o h2 que é filho da classe main-content*/
+    font-style: italic;
+}
+div.main-content h2.heading{ /*O h2 com a classe heading que é filho da div com a classe main-content */
+    color: red;
+}
+
+div{
+    margin-left: 10px;
+    color: initial;
+}
+.pai{
+    color: blue;
+}
+.pai.filha{ /*Sem o espaçamento indica que algo tem que ter as duas classes para que seja aplicado*/
+background: blue;
+}
+
+.pai > .filha { /* Seleciona as filhas diretas da div pai, as filhas "netas" dele não se aplica, não se esqueça de olhar a herança */
+    color: red;
+}
+.pai > .filha > .filha{
+    color: blue;
+}
+
+/*Parte 2*/
