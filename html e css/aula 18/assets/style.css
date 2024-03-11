@@ -1,0 +1,36 @@
+/*
+
+As regras css tem prioridades de aplicação sobre as outras, sendo elas:
+
+    0 (Não, só não) - !important (use o important no último caso, força o navegador)
+    1 - tag STYLE 
+   2- ID
+   3- classes, atributos e pseudo-classes
+   4- tag e pseudo-elementos
+
+CASO haja CONFLITO - empate, A ÚLTIMA regra escrita será aplicada
+
+*/
+#p{ /*(1,0,0)*/
+    background: red;
+}
+#p.p{ /*
+    Tem que ter os dois
+    (1,1,0)
+    */
+    background:blue;
+}
+
+body#b p#p.p{ /*
+    tem que ter os 3
+    (2,1,2)
+    */
+    background: gray;
+}
+p::selection{ /*(0,o,2) - 1 da tag e 1 da pseudo-classe*/
+    background: palevioletred;
+}
+
+p{
+    background-color: yellow !important;
+}

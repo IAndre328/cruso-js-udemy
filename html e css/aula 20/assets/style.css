@@ -1,0 +1,20 @@
+.texto{
+    box-sizing: border-box; /*Content + padding + border = width*/
+    /* box-sizing: content-box; width = content, + padding + border */
+    /* box-sizing: padding-box; content + padding = width, + border */
+    
+    background: red;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 500px;
+    min-width: 0;
+    min-height: 0;
+    overflow: auto;
+    margin: 15px auto; /*Está alinhando ao centro horizontalmente*/
+    padding: 10px 9px 15px 1px;
+    /*top - right - bottom - left */
+    /*x - y*/
+
+    border: solid 5px black;
+}

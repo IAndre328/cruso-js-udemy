@@ -43,3 +43,28 @@ background: blue;
 }
 
 /*Parte 2*/
+
+/*
+o nth-child() serve para selecionar o elemento entre seus irmãos
+
+parâmentros que podem ser colocados: 
+    2,3,1 - posição - começa pelo 1
+    even - pares
+    odd - ímpares
+    5n - no caso vai de 5 em 5
+    3n+5 - no caso vai de 3 em 3, MAS COMEÇA DO QUINTO
+*/
+
+ul li:nth-child(odd){
+    background-color: blueviolet;
+}
+
+ul li:nth-child(even){
+    background-color: lawngreen;
+}
+ul li:nth-child(3n){
+    background-color: darkred;
+}
+ul li:nth-child(3n+5){
+    background-color: darkcyan;
+}
