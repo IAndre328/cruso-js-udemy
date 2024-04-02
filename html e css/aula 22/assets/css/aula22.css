@@ -1,0 +1,52 @@
+/*Associadas ao estado dos elementos*/
+
+.title{ /*Suaviza a transição dos elementos*/
+    transition: all 0.3s ease-in-out;
+
+}
+.title:hover{ /*Mouse por cima*/
+    text-decoration: underline;
+    background-color: aqua;
+}
+a{
+    color: darkslateblue;
+}
+a:link { /*Link que não foi visitado*/
+    color: palevioletred;
+}
+a:visited{ /*Link que já foi visitado*/
+    color: darkblue;
+}
+a:active{ /*Segurando o botão de clique em um link*/
+    background-color: darkcyan;
+}
+input:focus { /*Input pronto para ser digitado*/
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+input:disabled{ /*Desativado*/
+    background-color: red;
+    cursor:not-allowed;
+}
+input:enabled { /*Ativado*/
+    background-color: transparent;
+}
+input:checked{ /*Checkado*/
+    width: 50px;
+    height: 50px;
+}
+input:required{ /*Requirido*/
+    border: solid orange 2px;
+}
+
+.pai .lista li:first-child{ /*O primeiro filho de .lista que é filha de .pai */
+    height: 50px;
+}
+
+/*!!!!!*/
+
+input:checked +p{ /*O primeiro P logo após um input checkado*/
+    background-color: red;
+}
+
+/*!!!!!*/
+

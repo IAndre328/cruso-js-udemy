@@ -82,8 +82,17 @@ ul li:nth-child(3n+5){
     /*
     General sibling selector
 
-    Seleciona TODOS os elementos p que vem depois do h1
+    Seleciona TODOS os elementos p que vem DEPOIS do h1
     */
 
     background-color: blueviolet;
+}
+
+[meuAtributo="valor"]{
+    color: yellow;
+    font-size: 50px;
+}
+[checked]{
+    width: 150px;
+    height: 150px;
 }

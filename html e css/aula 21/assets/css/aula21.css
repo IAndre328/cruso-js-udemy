@@ -1,0 +1,36 @@
+[meuAtributo~="valor2"]{
+    /*
+    O til (~) juntamente com o igual (=) especifica que valor2 tem que estar na lista de valores, mas não necessariamente o único valor.
+    */
+
+    color: blue;
+}
+
+[meuAtributo|="valor"]{
+    /*
+    A barra vertical (|) juntamente com o igual (=) especifica que PRECISA de um TRAÇO após valor para ser selecionado
+    */
+
+    color: red;
+}
+[meuAtributo^="comecou"]{
+    /*
+    O acento circunflexo juntamente com o igual (=), especifica que o valor precisa COMEÇAR com o que está entre aspas
+    */
+
+    color: brown;
+}
+[meuAtributo$="al"]{
+    /*
+    O sinal de dólar juntamente com o igual (=), especifica que o valor precisa TERMINAR com o que está entre aspas
+    */
+
+    color: green;
+}
+[meuAtributo*="de concreto"]{
+    /*
+    O sinal de asterisco juntamente com o igual (=), especifica que o valor precisa estar presente em qualquer parte da lista de valores, podendo espaços
+    */
+
+    background-color: gray;
+}
