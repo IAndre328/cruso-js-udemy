@@ -43,3 +43,23 @@ background: blue;
 }
 
 /*Parte 2*/
+
+.pai h1+p{
+     /*
+    adjascent sibling selector
+
+     Seleciona o elemento que está dentro da classe pai, que está diretamente depois do h1
+     "O h1 que vem logo depois do P"
+    */
+    background-color:aquamarine;
+}
+
+.pai h1~p{
+    /*
+    General sibling selector
+
+    Seleciona TODOS os elementos p que vem depois do h1
+    */
+
+    background-color: blueviolet;
+}
