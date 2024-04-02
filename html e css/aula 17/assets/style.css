@@ -1,0 +1,40 @@
+li {
+    margin: 10px;
+}
+
+ul li::after { /*DEPOIS do CONTEÚDO do elemento eu quero colocar alguma coisa*/
+
+content: " - ";
+background: red;
+color: white;
+margin: 10px;
+
+}
+
+ul li::before { /*ANTES do CONTEÚDO elemento eu quero colocar alguma coisa*/
+
+content: " - ";
+background: blue;
+color: white;
+margin: 10px;
+    
+}
+
+p::first-letter { /*Primeira LETRA*/
+    font-size: 150px;
+    display: block;
+    float: left;
+    margin: 0 10px 0;
+}
+
+p::first-line{ /*Primeira LINHA*/
+    background: red;
+}
+
+p::selection{ /*Seleção do cursor*/
+    background-color: blueviolet;
+    color: #ffffff;
+}
+.form-field::placeholder{
+    color: red;
+}
